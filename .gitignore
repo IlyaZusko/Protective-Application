@@ -16,5 +16,6 @@ babel.config.js
 package-lock.json
 package.json
 assets/
-
+font/
+img/
 
