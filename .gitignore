@@ -17,5 +17,4 @@ package-lock.json
 package.json
 /assets
 
-# macOS
-.DS_Store
+
