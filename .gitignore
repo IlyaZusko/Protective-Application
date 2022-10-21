@@ -15,7 +15,7 @@ app.json
 babel.config.js
 package-lock.json
 package.json
-assets/
+/assets
 
 # macOS
 .DS_Store
