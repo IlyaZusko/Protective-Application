@@ -59,9 +59,9 @@ export default function Main({ navigation }) {
 
         {/* Search */}
 
-        <View style={styles.search}>
-            <Text style={styles.searchTitle}>Search...</Text>
-        </View>
+        {/* <TouchableOpacity style={styles.search}>
+            <Text style={styles.searchTitle}>Документация</Text>
+        </TouchableOpacity> */}
 
         {/* Apps */}
 
@@ -73,22 +73,22 @@ export default function Main({ navigation }) {
                 borderBottomWidth: 1,
 
             }}>
-                <Text style={styles.apps}>App's</Text>
+                <Text style={styles.apps}>Приложения</Text>
             </View>
             
             <View style={styles.chapter}>
                 <Text style={{
                     fontFamily: 'mul-reg',
-                    fontSize: 16,
-                    marginLeft: -200,
+                    fontSize: 18,
+                    // marginLeft: -200,
                     marginTop: 6
-                }}>Password`s</Text>
+                }}>Пароли</Text>
                 <TouchableOpacity style={styles.passwordGen} onPress={loadSceneQTSOPP}>
                     <Text style={styles.passwordGenTitle}>QTSOPP</Text>
                     <MaterialCommunityIcons name="math-compass" size={28} color="#FFFFFF" style={styles.passwordIcon} />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.passwordGen} onPress={loadSceneGeneratePassword}>
-                    <Text style={styles.passwordGenTitle}>Password Generator</Text>
+                    <Text style={styles.passwordGenTitle}>Генератор паролей</Text>
                     <MaterialCommunityIcons name="form-textbox-password" size={28} color="#FFFFFF" style={styles.passwordIcon}/>
 
                 </TouchableOpacity>
@@ -97,17 +97,17 @@ export default function Main({ navigation }) {
             <View style={styles.chapter}>
                 <Text style={{
                     fontFamily: 'mul-reg',
-                    fontSize: 16,
-                    marginLeft: -230,
+                    fontSize: 18,
+                    // marginLeft: -230,
                     marginTop: 6
-                }}>Table`s</Text>
+                }}>Таблицы</Text>
                 <TouchableOpacity style={styles.passwordGen} onPress={loadSceneEncryptionTable}>
-                    <Text style={styles.passwordGenTitle}>Encryption Tables</Text>
+                    <Text style={styles.passwordGenTitle}>Шифрующие таблицы</Text>
                 <MaterialCommunityIcons name="table-lock" size={28} color="#FFFFFF" style={styles.passwordIcon} />
 
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.passwordGen} onPress={loadSceneGeneratePassword}>
-                    <Text style={styles.passwordGenTitle}>Magic Square</Text>
+                    <Text style={styles.passwordGenTitle}>Магический квадрат</Text>
                     <FontAwesome name="magic" size={28} color="#FFFFFF" style={styles.passwordIcon} />
 
                 </TouchableOpacity>
@@ -116,20 +116,20 @@ export default function Main({ navigation }) {
             <View style={styles.chapterSecond}>
                 <Text style={{
                     fontFamily: 'mul-reg',
-                    fontSize: 16,
-                    marginLeft: -182,
+                    fontSize: 18,
+                    // marginLeft: -182,
                     marginTop: 6
-                }}>Text Encoder`s</Text>
+                }}>Шифрование текста</Text>
                 <TouchableOpacity style={styles.passwordGen} onPress={loadSceneTextEncoder}>
-                    <Text style={styles.passwordGenTitle}>Caesar Method</Text>
+                    <Text style={styles.passwordGenTitle}>Метод Цезаря</Text>
                     <MaterialCommunityIcons name="crown-outline" size={28} color="#FFFFFF" style={styles.passwordIcon} />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.passwordGen} onPress={loadSceneTrisemusEncoder}>
-                    <Text style={styles.passwordGenTitle}>Trisemus Method</Text>
+                    <Text style={styles.passwordGenTitle}>Метод Трисемуса</Text>
                     <AntDesign name="book" size={28} color="#FFFFFF" style={styles.passwordIcon} />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.passwordGen} onPress={loadSceneTextEncoder}>
-                    <Text style={styles.passwordGenTitle}>Playfair method</Text>
+                    <Text style={styles.passwordGenTitle}>Метод Плейфера</Text>
                     <MaterialCommunityIcons name="atom" size={28} color="#FFFFFF" style={styles.passwordIcon} />
                 </TouchableOpacity>
             </View>
@@ -238,12 +238,12 @@ const styles = StyleSheet.create({
         
     },
     searchTitle: {
-        color: '#636363',
+        color: '#000',
         fontFamily: 'mul-reg',
-        fontSize: 16,
+        fontSize: 18,
         marginBottom: 'auto',
         marginTop: 'auto',
-        marginLeft: 24,
+        
     },
   search: {
     width: 340,
@@ -251,7 +251,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'black',
     borderRadius: 30,
-    marginTop: 46,
+    marginTop: 20,
+    alignItems: 'center',
     
 
   },
@@ -269,7 +270,7 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: 'row',
-    borderWidth: 1,
+    borderWidth: 0.5,
     borderColor: 'black',
     width: '100%',
     height: 100,
